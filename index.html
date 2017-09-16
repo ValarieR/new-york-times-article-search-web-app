@@ -4,11 +4,69 @@
 <head>
     <meta charset="utf-8">
     <title>New York Times Article Search</title>
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<div>
+	<div>
+<div class="container">
+	<div class="jumbotron text-center">
+		New York Times Search
+	</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Search Parameters</h3>
+  </div>
+  <div class="panel-body" id="search-container">
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="search" class="control-label">Search Term:</label>
+			<input type="text" class="form-control" placeholder="">
+
+			<br><br>
+		<div>
+			<select class="form-control">
+  				<option>1</option>
+  				<option>2</option>
+  				<option>3</option>
+  			</select>
+		</div>
+
+		<br><br>
+		
+		<label for="date" class="control-label">Starting Date: (optional)</label>
+		<input type="text" class="form-control" placeholder="">
+
+		<br><br>
+		<label for="date" class="control-label">Starting Date: (optional)</label>
+		<input type="text" class="form-control" placeholder="">
+
+		<br><br>
+
+		<input class="btn btn-default" type="submit" value="Search">
+			<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+		</input>
+
+		<input class="btn btn-default" type="del" value="Clear Search">
+			<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+		</input>
+
+
+	</div>
+	</form>
 </div>
+</div>
+
+</div>
+</div>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript " src="app.js "></script>
 </body>
