@@ -12,63 +12,62 @@
 </head>
 
 <body>
-	<div>
-<div class="container">
-	<div class="jumbotron text-center">
-		New York Times Search
-	</div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Search Parameters</h3>
-  </div>
-  <div class="panel-body" id="search-container">
-	<form class="form-horizontal">
-		<div class="form-group">
-			<label for="search" class="control-label">Search Term:</label>
-			<input type="text" class="form-control" placeholder="">
-
-			<br><br>
-		<div>
-			<select class="form-control">
-  				<option>1</option>
-  				<option>2</option>
-  				<option>3</option>
-  			</select>
-		</div>
-
-		<br><br>
-		
-		<label for="date" class="control-label">Starting Date: (optional)</label>
-		<input type="text" class="form-control" placeholder="">
-
-		<br><br>
-		<label for="date" class="control-label">Starting Date: (optional)</label>
-		<input type="text" class="form-control" placeholder="">
-
-		<br><br>
-
-		<input class="btn btn-default" type="submit" value="Search">
-			<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
-		</input>
-
-		<input class="btn btn-default" type="del" value="Clear Search">
-			<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
-		</input>
-
-
-	</div>
-	</form>
-</div>
-</div>
-
-</div>
-</div>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript " src="app.js "></script>
+    <div>
+        <div class="container">
+            <div class="jumbotron text-center" id="jumbo">
+                New York Times Search
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Search Parameters</h3>
+                </div>
+                <div class="panel-body" id="search-container">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="search" class="control-label">Search Term:</label>
+                            <input type="text" class="form-control" placeholder="" id="search-term">
+                            <br>
+                            <br>
+                            <div>
+                                <label for="search" class="control-label">Number of Results:</label>
+                                <select class="form-control" id="num-records">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+                            <label for="date" class="control-label">Starting Date: (optional)</label>
+                            <input type="text" class="form-control" placeholder="" id="begin-year">
+                            <br>
+                            <br>
+                            <label for="date" class="control-label">Starting Date: (optional)</label>
+                            <input type="text" class="form-control" placeholder="" id="end-year">
+                            <br>
+                            <br>
+                            <input class="btn btn-default" type="submit" value="Search">
+                            <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                            </input>
+                            <input class="btn btn-default" type="del" value="Clear Search">
+                            <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                            </input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Top Articles:</h3>
+            </div>
+            <div class="panel-body">
+                ......
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript " src="app.js "></script>
 </body>
 
 </html>
