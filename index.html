@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div>
+    <div class="search-container">
         <div class="container">
-            <div class="jumbotron text-center" id="jumbo">
-                New York Times Search
+            <div class="jumbotron text-center" id="jumbo" class="blue">
+                <span class="white"> New York Times Search</span>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" class="blue">
                     <h3 class="panel-title">Search Parameters</h3>
                 </div>
                 <div class="panel-body" id="search-container">
@@ -26,8 +26,8 @@
                         <div class="form-group">
                             <label for="search" class="control-label">Search Term:</label>
                             <input type="text" class="form-control" placeholder="" id="search-term">
-                            <br>
-                            <br>
+                            		<br>
+                            		<br>
                             <div>
                                 <label for="search" class="control-label">Number of Results:</label>
                                 <select class="form-control" id="num-records">
@@ -36,16 +36,16 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                            <br>
-                            <br>
+                            		<br>
+                            		<br>
                             <label for="date" class="control-label">Starting Date: (optional)</label>
                             <input type="text" class="form-control" placeholder="" id="begin-year">
-                            <br>
-                            <br>
+                            		<br>
+                            		<br>
                             <label for="date" class="control-label">Starting Date: (optional)</label>
                             <input type="text" class="form-control" placeholder="" id="end-year">
-                            <br>
-                            <br>
+                            		<br>
+                            		<br>
                             <input class="btn btn-default" type="submit" value="Search">
                             <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
                             </input>
@@ -57,11 +57,11 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
+        <div class="panel panel-default" class="search-containera">
+            <div class="panel-heading" class="blue">
                 <h3 class="panel-title">Top Articles:</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body" id="results">
                 ......
             </div>
         </div>
