@@ -7,18 +7,29 @@ $(document).ready(function () {
 
     var numRecords;
 
-    var startYr = 15;
+    var startYr = 2015;
 
-    var endYr = 16;
+    var endYr;
 
 
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="
-        + searchTerm
-        + "&api-key=" + apiKey
-        + "&begin_date" + "0101"+startYr
-        + "&end_date" + "0101"+endYr
-    ;
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+    queryURL += '?' + $.param({
+        'api-key': apiKey,
+        'q': searchTerm
+    });
 
+    if (startYr > 0) {
+        queryURL += '&' + $.param({
+            'begin_date': startYr + "0101"
+        });
+    }
+    if (endYr > 0) {
+        queryURL += '&' + $.param({
+            'end_date': endYr + "1231"
+        });
+    }
+
+    console.log(queryURL);
 
     $.ajax({
         url: queryURL,
