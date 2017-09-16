@@ -1,9 +1,16 @@
 
 
-#search-container {
+#search-container,
+.search-container {
 	padding: 20px;
 }
 
+#jumbo,
+.blue {
+	background-color: #20315a;
+}
+
 #jumbo {
-	color: #20315a;
+	font-size: 40px;
+	font-color: white;
 }
