@@ -1,4 +1,6 @@
-
+.white {
+	color: white;
+}
 
 #search-container,
 .search-container {
@@ -6,11 +8,18 @@
 }
 
 #jumbo,
-.blue {
+.blue,
+#search-header,
+#results-header,
+#footer {
 	background-color: #20315a;
 }
 
 #jumbo {
 	font-size: 40px;
 	font-color: white;
+}
+
+#footer {
+	text-align: center;
 }

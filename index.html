@@ -6,28 +6,31 @@
     <title>New York Times Article Search</title>
     <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome -->
+    <script src="https://use.fontawesome.com/f59413c927.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div class="search-container">
         <div class="container">
-            <div class="jumbotron text-center" id="jumbo" class="blue">
-                <span class="white"> New York Times Search</span>
+            <div class="jumbotron text-center blue" id="jumbo">
+                <span class="white"><i class="fa fa-newspaper-o" aria-hidden="true"></i> New York Times Search</span>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading" class="blue">
-                    <h3 class="panel-title">Search Parameters</h3>
+                <div class="panel-heading blue" id="search-header">
+                    <h3 class="panel-title white">Search Parameters</h3>
                 </div>
                 <div class="panel-body" id="search-container">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <label for="search" class="control-label">Search Term:</label>
                             <input type="text" class="form-control" placeholder="" id="search-term">
-                            		<br>
-                            		<br>
+                            <br>
+                            <br>
                             <div>
                                 <label for="search" class="control-label">Number of Results:</label>
                                 <select class="form-control" id="num-records">
@@ -36,16 +39,16 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                            		<br>
-                            		<br>
+                            <br>
+                            <br>
                             <label for="date" class="control-label">Starting Date: (optional)</label>
                             <input type="text" class="form-control" placeholder="" id="begin-year">
-                            		<br>
-                            		<br>
+                            <br>
+                            <br>
                             <label for="date" class="control-label">Starting Date: (optional)</label>
                             <input type="text" class="form-control" placeholder="" id="end-year">
-                            		<br>
-                            		<br>
+                            <br>
+                            <br>
                             <input class="btn btn-default" type="submit" value="Search">
                             <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
                             </input>
@@ -56,13 +59,20 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default" class="search-containera">
-            <div class="panel-heading" class="blue">
-                <h3 class="panel-title">Top Articles:</h3>
+            <div class="panel panel-default" class="search-containera">
+                <div class="panel-heading blue" id="results-header">
+                    <h3 class="panel-title white">Top Articles:</h3>
+                </div>
+                <div class="panel-body" id="results">
+                    ......
+                </div>
             </div>
-            <div class="panel-body" id="results">
-                ......
+            <div class="panel panel-default">
+                <div class="panel-body" id="footer">
+                    <a href="https://valarier.github.io/valarie-regas/index.html" target="_blank">© 2017 Valarie Regas,</a>
+                    <a href="https://github.com/melheins" target="_blank"> Melanie Heins,</a>
+                    <a href="https://github.com/ksatter" target="_blank"> & Kathy Satterlee</a>
+                </div>
             </div>
         </div>
     </div>
